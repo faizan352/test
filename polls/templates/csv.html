@@ -1,0 +1,17 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<body bgcolor ="cyan">-->
+<!--    <form action="{% url 'myapp:upload_csv' %}" method="post" enctype="multipart/form-data">-->
+<!--    {% csrf_token %}-->
+<!--    <input type="file" name="csv_file1">-->
+<!--    <input type="submit" value="Upload">-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<form action="{% url %}" method="post" enctype="multipart/form-data">{% csrf_token %}
+
+    <input type="file" name="csv_file" />
+    <input type="submit" value="Upload" />
+
+</form>

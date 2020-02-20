@@ -1,0 +1,65 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<body>-->
+
+<!--<h1>{{ object.name }}</h1>-->
+<!--<h1>{{ object.typ }}</h1>-->
+<!--<h1>{{ object.due_date }}</h1>-->
+<!--<h1>{{ object.description }}</h1>-->
+<!--<h1>{{ object.status }}</h1>-->
+<!--<h1>{{ object.priority }}</h1>-->
+<!--<h1>{{ object.assign_to }}</h1>-->
+<!--<h1>{{ object.created_by }}</h1>-->
+<!--<h1>{{ object.Users_1d }}</h1>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<input type="submit" value="Enter" action="{% url 'user_get'%}">
+<table style="width:10%">
+  <tr>
+    <h1>TaskDetails</h1>
+  </tr>
+  <tr>
+    <td>{{ object.name }}</td>
+  </tr>
+  <tr>
+    <td>{{ object.typ }}</td>
+  </tr>
+  <tr>
+    <td>{{ object.due_date }}</td>
+  </tr>
+    <tr>
+    <td>{{ object.description }}</td>
+  </tr>
+    <tr>
+    <td>{{ object.status }}</td>
+  </tr>
+    <tr>
+    <td>{{ object.priority }}</td>
+  </tr>
+    <tr>
+    <td>{{ object.assign_to }}</td>
+  </tr>
+    <tr>
+    <td>{{ object.created_by }}</td>
+  </tr>
+    <tr>
+    <td>{{ object.Users_1d }}</td>
+  </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<body bgcolor="blue">
+<form method="GET" action="{% url 'tsk_view'%}" >
+     {% csrf_token %}
+    <input type="text" placeholder="Enter name" name="name"><br/>
+    <input type="text" placeholder="Enter type" name="type"><br/>
+    <input type="datetime-local" name="due_date"><br/>
+    <input type="text" placeholder="Enter description " name="description"><br/>
+    <input type="text" placeholder="Enter status" name="status"><br/>
+    <input type="text" placeholder="Enter priority" name="priority"><br/>
+    <input type="text" placeholder="Enter assign_to" name="assign_to"><br/>
+    <input type="text" placeholder="Enter created_by " name="created_by"><br/>
+    <input type="submit" value="Fetch">
+</form>
+</body>
+</html>
+
+

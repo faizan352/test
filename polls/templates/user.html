@@ -1,0 +1,9 @@
+<html>
+<body bgcolor="orange">
+<form method="POST" action="{% url 'user'%}" >
+     {% csrf_token %}
+    <input type="text" placeholder="Enter name" name="name"><br/>
+    <input type="submit" value="Enter">
+</form>
+</body>
+</html>

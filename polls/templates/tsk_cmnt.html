@@ -1,0 +1,9 @@
+<html>
+<body bgcolor="brown">
+<form method="POST" action="{% url 'tsk_cmnt'%}" >
+     {% csrf_token %}
+    <input comment="text" placeholder="Enter comment" comment="comment"><br/>
+    <input type="submit" value="Enter">
+</form>
+</body>
+</html>

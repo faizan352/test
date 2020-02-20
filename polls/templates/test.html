@@ -1,0 +1,15 @@
+<html>
+<body bgcolor="green ">
+
+<form method="POST" action="{% url 'test'%}" >
+     {% csrf_token %}
+    <input type="text" placeholder="Enter your classname" name="classname"><br />
+    <input type="text" placeholder="Enter your name" name="name"><br />
+    <input type="text" placeholder="Enter your address" name="address"><br />
+    <input type="submit" value="submit">
+
+</form>
+</body>
+</html>
+
+
